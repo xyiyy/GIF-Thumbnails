@@ -1,6 +1,6 @@
 # GIF-Thumbnails
 
-This repo is the official implementation of the paper of [GIF-Thumbnails](https://www.aaai.org/AAAI21Papers/AAAI-1201.XuY.pdf):**GIF Thumbnails: Attract More Clicks to Your Videos**(AAAI-21).
+This repo is the official implementation of the paper of [GIF-Thumbnails](https://www.aaai.org/AAAI21Papers/AAAI-1201.XuY.pdf): **GIF Thumbnails: Attract More Clicks to Your Videos**(AAAI-21).
 
 <img src="./imgs/Cover1.jpg" width="300" /> <img src="./imgs/Gif1.gif" width="300" />
 
