@@ -28,7 +28,7 @@ For annotated data, json is organized as:
     }, ...
 }
 ```
-For annotated data, videos are listed as:
+For unannotated data, videos are listed as:
 ```
 {
     $video_hash_key: {
@@ -42,10 +42,12 @@ Download videos by [you-get](https://github.com/soimort/you-get)
 ```
 you-get --format=flv720 https://www.bilibili.com/video/av18182135 -O 18182135.flv
 ```
-Then we process the video to fps=16 and Height=240 with ffmpeg
+Then we process the video to fps=16 and new_height=240 with ffmpeg
 ```
-ffmpeg -i $InputVideo -r 16 -vf scale=$Width:$Height -qscale 0 $OutputVideo
+ffmpeg -i $InputVideo -r 16 -vf scale=$new_width:$new_height -qscale 0 $OutputVideo
 ```
+where $new\_width=width \times \frac{new\_height}{height}$
+
 ### Time-sync Comments
 For time-sync comments, we only release the number of comments in each second. 
 ```
@@ -54,7 +56,7 @@ For time-sync comments, we only release the number of comments in each second.
     ...
 }
 ```
-Time-sync comments and video share the same $video_hash_key
+Time-sync comments and video share the same video_hash_key, and $n$ is the number of frames
 
 # Citation
 If you find this project is useful for your research, please cite:
