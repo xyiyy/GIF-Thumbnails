@@ -48,6 +48,10 @@ ffmpeg -i $InputVideo -r 16 -vf scale=$new_width:$new_height -qscale 0 $OutputVi
 ```
 where $new\_width=width \times \frac{new\_height}{height}$
 
+**Considering that some videos has been removed and are not available on bilibili now, we provide the feature of these videos extracted by 3D-ResNet-50. 
+Features are released on the [BaiduDisk](https://pan.baidu.com/s/1BOeRQDM2It_IG69lQqaidg) with code `g9pa`.**
+
+
 ### Time-sync Comments
 For time-sync comments, we only release the number of comments in each second. 
 ```
